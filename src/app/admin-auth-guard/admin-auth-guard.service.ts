@@ -1,4 +1,4 @@
-import { AppUser } from './../models/app-user';
+import { AppUser } from '../shared/models/app-user';
 import { Observable } from 'rxjs/Observable';
 import { UserService } from './../user/user.service';
 import { AuthService } from './../auth/auth.service';
