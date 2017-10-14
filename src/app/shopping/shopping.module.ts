@@ -1,7 +1,4 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { AdminAuthGuard } from 'app/admin/services/admin-auth-guard.service';
 
 import { SharedModule } from '../shared/shared.module';
 import { CheckOutComponent } from './components/check-out/check-out.component';
@@ -16,8 +13,6 @@ import { ShoppingRoutingModule } from './shopping-routing.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
     SharedModule,
     ShoppingRoutingModule
   ],
@@ -30,9 +25,6 @@ import { ShoppingRoutingModule } from './shopping-routing.module';
     ProductFilterComponent,
     ShoppingCartSummaryComponent,
     ShippingFormComponent
-  ],
-  providers: [
-    AdminAuthGuard
-  ],
+  ]
 })
 export class ShoppingModule { }
